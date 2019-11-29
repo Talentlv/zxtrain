@@ -1,0 +1,54 @@
+<!--pages/grabticket/grabticket.wxml-->
+<view class="amountBg">
+  <view class="bg">
+    <view class="icon">攻略</view>
+    <view class="tip">抢票成功后以电话或者短信的方式通知，收到后请及时支付！</view>
+    <view class="right">></view>
+  </view>
+</view>
+<view class="content">
+  <view class="hr"></view>
+  <view class="item">
+    <view class="ticket">
+      <view class="station">茂名-东莞</view>
+      <view class="desc1">09月09日</view>
+      <view class="desc2">已取消</view>
+    </view>
+    <view class="opr">查看</view>
+  </view>
+  <view class="hr"></view>
+  <view class="item">
+    <view class="ticket">
+      <view class="station">肇庆-东莞</view>
+      <view class="desc1">09月10日</view>
+      <view class="desc2">已取消</view>
+    </view>
+    <view class="opr">查看</view>
+  </view>
+  <view class="hr"></view>
+  <view class="item">
+    <view class="ticket">
+      <view class="station">东莞-茂名</view>
+      <view class="desc1">09月08日</view>
+      <view class="desc2">已取消</view>
+    </view>
+    <view class="start">开始</view>
+  </view>
+  <view class="hr"></view>
+  <view class="item">
+    <view class="ticket">
+      <view class="station">茂名-深圳</view>
+      <view class="desc1">09月09日</view>
+      <view class="desc2">抢票终止</view>
+    </view>
+    <view class="start">开始</view>
+  </view>
+</view>
+<view class="share">
+  <view class="speed">加速</view>
+  <view class="tipShare">
+    <view>分享赢加速包</view>
+    <view class="jsb">分享给好友，可以随机赢取最多10个加速包</view>
+  </view>
+  <view class="detail">></view>
+</view>

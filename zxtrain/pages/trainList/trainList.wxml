@@ -1,0 +1,48 @@
+<!--pages/trainList/trainList.wxml-->
+<view class="date">
+  <view>前一天</view>
+  <view>{{date}}</view>
+  <view>后一天</view>
+</view>
+<view class="message-content" style="height:{{winHeight}}px">
+  <block>
+    <view class="bg">
+      <view class="item">
+        <view class="wrap left">
+          <view class="startTime">00:01</view>
+          <view class="station">茂名</view>
+        </view>
+        <view class="wrap center">
+          <view class="trainType">K838</view>
+          <view class="hr"></view>
+          <view class="trainTime">6时15分</view>
+        </view>
+        <view class="wrap right">
+          <view class="endTime">06:16</view>
+          <view class="station">东莞</view>
+        </view>
+        <view class="wrap price">￥64.5
+          <text>起</text>
+        </view>
+      </view>
+      <view class="seat-hr"></view>
+      <view class="seat">
+        <view class="wrap-seat haveSeat">硬座(有票)</view>
+        <view class="wrap-seat toughBed">硬卧
+          <text>(抢)</text>
+        </view>
+        <view class="wrap-seat softBed">软卧5</view>
+        <view class="wrap-seat noSeat">无座(有票)</view>
+      </view>
+    </view>
+  </block>
+  <view class="nav">
+    <view class="bottomNav">
+      <view id="0" class="{{currentTab==0?'selected':'common'}}" bindtap="switchNav">只看高铁动车</view>
+      <view style="color:#ccc;">|</view>
+      <view id="1" class="{{currentTab==1?'selected':'common'}}" bindtap="switchNav">出发早>晚</view>
+      <view style="color:#ccc;">|</view>
+      <view id="2" class="{{currentTab==2?'selected':'common'}}" bindtap="switchNav">高级筛选</view>
+    </view>
+  </view>
+</view>

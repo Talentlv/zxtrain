@@ -1,0 +1,164 @@
+/* pages/train/train.wxss */
+.nav-content{
+  height: 500px;
+  background-color: #fff;
+}
+.nav-item{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 40px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.select{
+  width: 40%;
+  height: 40px;
+  line-height: 40px;
+  color: #1E90FF;
+  font-size: 14px;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: 3px solid #1E90FF;
+}
+.normal{
+  width: 40%;
+  height: 40px;
+  line-height: 40px;
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  margin: 0 auto;
+}
+.formbg{
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.station{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+
+}
+.startStation{
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+.startStation text{
+  font-size: 12px;
+  color: #999;
+}
+.startStation input{
+  font-size: 18px;
+  font-weight: bold;
+  height: 40px;
+  line-height: 40px;
+}
+.endStation{
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+.endStation text{
+  font-size: 12px;
+  color: #999;
+}
+.endStation input{
+  font-size: 18px;
+  font-weight: bold;
+  height: 40px;
+  line-height: 40px;
+}
+.station image{
+  margin-top: 15px;
+}
+.hr{
+  height: 1px;
+  background-color: #ccc;
+  opacity: 0.2;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.startDate{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+}
+.startDate input{
+  width: 80px;
+  height: 35px;
+  line-height: 35px;
+  font-weight: bold;
+}
+.startDate text{
+  height: 35px;
+  line-height: 35px;
+  font-size: 12px;
+  color: #666;
+}
+.choice{
+  width: 90%;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  position: relative;
+}
+.choice view{
+  font-size: 12px;
+}
+.xs{
+  position: absolute;
+  right: 0px;
+}
+.btn{
+  width: 90%;
+  height: 45px;
+  line-height: 45px;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  background-color: #00BFFF;
+  border-radius: 20px;
+}
+.record{
+  width: 90%;
+  margin: 0 auto;
+  height: 45px;
+  line-height: 45px;
+  font-size: 12px;
+  color: #999;
+  margin-top: 10px;
+}
+.record text{
+  padding: 8px;
+}
+.icons{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.item{
+  width: 25%;
+  text-align: center;
+  margin: 0 auto;
+}
+.menu{
+  width: 100%;
+  font-size: 12px;
+  color: #999;
+}

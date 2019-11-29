@@ -1,0 +1,95 @@
+<!--pages/train/train.wxml-->
+<view class="content">
+  <!-- 海报轮播 -->
+  <view class="carousel">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" 
+    circular="{{circular}}" duration="{{duration}}" style="height:80px;">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" style="width:100%;height:80px;"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <!-- 页面切换 -->
+  <view class="nav-content">
+    <view class="nav-item">
+      <view id="0" class="{{currentTab == 0?'select':'normal'}}" bindtap="switchNav">火车票</view>
+      <view id="1" class="{{currentTab == 1?'select':'normal'}}" bindtap="switchNav">飞机票</view>
+    </view>
+    <view class="formbg">
+      <form bindsubmit="formSubmit">
+        <view class="station">
+          <view class="startStation">
+            <view><text>出发城市</text></view>
+            <view>
+              <input name="startStation" value="高州"></input>
+            </view>
+          </view>
+          <view>
+            <image src="../../images/icon/hcp/xz.png" style="width:44px;height:44px;"></image>
+          </view>
+          <view class="endStation">
+            <view><text>到达城市</text></view>
+            <view>
+              <input name="endStation" value="东莞"></input>
+            </view>
+          </view>
+        </view>
+        <view class="hr"></view>
+        <view class="startDate">
+          <view>
+            <input name="date" value="09月04日"></input>
+          </view>
+          <view>
+            <text>明天出发</text>
+          </view>
+        </view>
+        <view class="hr"></view>
+        <view class="choice">
+          <view class="gt">高铁动车
+            <checkbox name="gt" style="transform:scale(0.8);"></checkbox>
+          </view>
+          <view class="xs">学生票
+            <checkbox name="xs" style="transform:scale(0.8);"></checkbox>
+          </view>
+        </view>
+        <button class="btn" form-type="submit">火车票查询</button>
+        <view class="record">
+          <text>高州-肇庆</text>
+          <text>茂名-东莞</text>
+          <text>茂名-昆明</text>
+          <text>清除历史</text>
+        </view>
+        <view class="hr"></view>
+      </form>
+      <view class="icons">
+        <view class="item">
+          <view>
+            <image src="../../images/icon/hcp/jsqp.jpg" style="width:40px;height:40px;"></image>
+          </view>
+          <view class="menu">极速抢票</view>
+        </view>
+        <view class="item">
+          <view>
+            <image src="../../images/icon/hcp/zxxz.jpg" style="width:40px;height:40px;"></image>
+          </view>
+          <view class="menu">在线选座</view>
+        </view>
+        <view class="item">
+          <view>
+            <image src="../../images/icon/hcp/qshh.jpg" style="width:40px;height:40px;"></image>
+          </view>
+          <view class="menu">抢手好货</view>
+        </view>
+        <view class="item">
+          <view>
+            <image src="../../images/icon/hcp/czjd.jpg" style="width:40px;height:40px;"></image>
+          </view>
+          <view class="menu">超值酒店</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
